@@ -1790,7 +1790,7 @@ async function simpanPassword(){
 /* ================= SINKRONISASI SERVER (Google Apps Script + Google Sheet) =================
    Pasang Code.gs v4 (lihat petunjuk di bagian atas file itu), deploy sebagai Web App, lalu isi URL-nya di SYNC_URL.
    Login memerlukan internet; hak akses dipaksa di server. */
-const SYNC_URL='';   /* <<< ISI dengan URL Web App Apps Script BARU milik Cab. Bandar (lihat Code.gs) */
+const SYNC_URL='https://script.google.com/macros/s/AKfycbylbRdIbIED8BFLPhzrgN9Zhb-v0K74U5l7NGVuFmBTrcouUw3Kpll4QEpiHZc6MzBsYw/exec';
 /* Tidak ada lagi secret di aplikasi: akses dikendalikan login + token sesi dari server (Code.gs v4). */
 async function apiCall(aksi,extra){
   if(!SYNC_URL)return {ok:false,error:'URL server belum diisi (SYNC_URL)'};
